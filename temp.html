@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="cont">
+    <form id="tempconv" onsubmit="return calcTemp();">
+    <label>Enter the temperature you want to convert</label>
+    <input type="number" id="temp" >
+    <br>
+    
+    <select id="fromtemp">
+        <option value="celsius">Celsius(&deg;C)</option>
+        <option value="farenheit">Farenheit(&deg;F)</option>
+        <option value="kelvin">Kelvin(K)</option>
+    </select>
+    <label style="margin-left: 15px;">TO</label>
+    <select id="totemp">
+        <option value="celsius">Celsius(&deg;C)</option>
+        <option value="farenheit">Farenheit(&deg;F)</option>
+        <option value="kelvin">Kelvin(K)</option>
+    </select>
+    <br>
+    <input type="submit">
+</form>
+<p id="result"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
